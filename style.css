@@ -1,0 +1,22 @@
+.recipe_wrap{
+    max-width:800px;
+    margin:0 auto;
+    border:1px solid black;
+    padding:15px;
+    position:relative;
+}
+.recipe-header{display:flex; justify-content:space-between;}
+
+.time {display:inline-block; }
+.time ul{
+    margin:-16px; padding:0px;list-style-type:none;
+}
+
+.time ul li{
+    display:inline-block;
+    padding:15px;border:1px solid black;
+}
+.recipe-body{display:flex;}
+.ingredients{width:35%;}
+.instructions{width:65%;}
+.wrap{padding:15px;}
