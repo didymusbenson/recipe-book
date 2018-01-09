@@ -16,37 +16,38 @@
         {{#each this}}
         <div class="recipe_wrap">
             <div class="recipe-header">
-            <h2>{{this.name}}</h2>
-            <div class="time">
-              <ul>
-                    <li>Prep Time: {{this.time.prep}}</li>
-                    <li>Cook Time: {{this.time.cook}}</li>
-                    <li>Total Time: {{this.time.total}}</li>
-                </ul>
+                <h2>{{this.name}}</h2>
+                <div class="time">
+                    <ul>
+                        <li>Prep Time: {{this.time.prep}}</li>
+                        <li>Cook Time: {{this.time.cook}}</li>
+                        <li>Total Time: {{this.time.total}}</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="recipe-body">
+                <div class="ingredients">
+                    <h3>INGREDIENTS</h3>
+                    <ul>
+                        {{#each this.ingredients}}
+                        <li>{{this.amount}} {{this.measurement}} - {{this.item}}</li>
+                        {{/each}}
+                    </ul>
+
+                </div>
+                <div class="instructions">
+                    <h3>INSTRUCTIONS</h3>
+                    <ol>
+                        {{#each this.instructions}}
+                        <li>{{this}}</li>
+                        {{/each}}
+                    </ol>
+                </div>
             </div>
         </div>
-            <div class="recipe-body">
-            <div class="ingredients">
-<h3>INGREDIENTS</h3>
-                <ul>
-                    {{#each this.ingredients}}
-                    <li>{{this.amount}} {{this.measurement}} - {{this.item}}</li>
-                    {{/each}}
-                </ul>
-
-            </div>
-            <div class="instructions">
-                <h3>INSTRUCTIONS</h3>
-                <ol>
-                    {{#each this.instructions}}
-                    <li>{{this}}</li>
-                    {{/each}}
-                </ol>
-            </div>
-        </div></div>
         {{/each}}
     </script>
-<div id="wrap">
+    <div id="wrap">
 
     </div>
 
